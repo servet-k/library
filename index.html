@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js" defer></script>
+    <title>Book Library</title>
+</head>
+<body>
+    <div class="container">
+            <table>
+                <caption>Book Library</caption>
+                <thead>
+                <tr>
+                    <th></th>    
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Number of Pages</th>
+                    <th>Read</th>
+                    <th></th>
+                        
+                </tr>
+                </thead>
+                <tbody id="booklist">
+                    
+                </tbody>
+            </table>
+           
+    </div>
+    <div class="btn">
+    <button onclick="showInput()">Add Book</button>
+    </div>
+    <div class="empty">
+            <div class="entry">
+                <h2>Enter Book details</h2>
+                <form action="#" class="box">
+                    <div class="cell">
+                        <label for="name">Book Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="cell">
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author">
+                    </div>
+                    <div class="cell">
+                        <label for="page">Number of Pages</label>
+                        <input type="text" name="page" id="page">
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" name="read" id="read">Read?</label>
+                    </div>
+                    <input type="reset" value="reset" id="rst-btn">
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+    </div>
+   
+</body>
+</html>
